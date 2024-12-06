@@ -76,8 +76,8 @@
 		E9A755102D0388D300E7BCE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E9A7550A2D0388B600E7BCE4 /* LandingView.swift */,
 				E9A755112D0389B000E7BCE4 /* WorldClockView.swift */,
+				E9A7550A2D0388B600E7BCE4 /* LandingView.swift */,
 				E9A755132D0389C200E7BCE4 /* AlarmsView.swift */,
 				E9A755152D0389FB00E7BCE4 /* StopwatchView.swift */,
 			);
