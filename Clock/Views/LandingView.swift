@@ -24,15 +24,15 @@ struct LandingView: View {
                     Text("Alarm")
                 }
                 .tag(2)
- 
+            
             StopwatchView()
                 .tabItem {
                     Image(systemName: "stopwatch.fill")
                     Text("Stopwatch")
                 }
                 .tag(3)
- 
         }
+        .preferredColorScheme(.dark)
         .padding()
     }
 }
