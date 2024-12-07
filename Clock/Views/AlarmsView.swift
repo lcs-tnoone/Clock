@@ -12,9 +12,33 @@ struct AlarmsView: View {
         NavigationStack{
             VStack{
                 HStack{
-                    Text("Hstack")
+                    //Top text
+                    Image(systemName: "bed.double.fill")
+                        .padding(.top, 15) // Move the image down slightly
+                        .padding(.leading, 10)
+                    Text("Sleep | Wake up")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.system(size: 24.0, weight: .bold, design: .default))
+                        .padding(.top, 15) // Move the text down slightly
+
+
+                }
+                HStack{
+                    
                 }
                 Spacer()
+                HStack{
+                    Text("9:25")
+                        .font(.system(size: 64.0, weight: .thin, design: .default))
+                    Text ("AM")
+                        .font(.system(.largeTitle, design: .default, weight: .thin))
+                    Spacer()
+                    Toggle("", isOn: Binding.constant(true))
+                   
+
+                }
+                Spacer()
+                
                 
                 Text("Alarms")
                     .navigationTitle("Alarms")
@@ -41,7 +65,7 @@ struct AlarmsView: View {
                     }
                 
             }
-            
+            .padding(3) // Add padding for the entire content
         }
         
     }
@@ -50,5 +74,5 @@ struct AlarmsView: View {
 
 
 #Preview {
-    AlarmsView()
+    LandingView()
 }
