@@ -13,11 +13,10 @@ struct WorldClockView: View {
             VStack{
                 
                 //HongKong
-                CountryTime(time: "3:20", hoursDifference: 12, country: "Hong Kong", AMorPM: "AM")
+                CountryTime(time: "3:20", hoursDifference: 12, City: "Hong Kong", amOrPm: "AM")
                 //Toronto
-                CountryTime(time: "3:20", hoursDifference: 0, country: "Toronto", AMorPM: "PM")
+                CountryTime(time: "3:20", hoursDifference: 0, City: "Toronto", amOrPm: "PM")
                 
-                Text("World Clock")
                     .navigationTitle("World Clock")
                     .toolbar {
                         
@@ -53,28 +52,4 @@ struct WorldClockView: View {
     LandingView()
 }
 
-struct CountryTime: View {
-    let time: String
-    let hoursDifference: Int
-    let country: String
-    let AMorPM: String
-    
-    var body: some View {
-        HStack{
-            //Left side
-            VStack{
-                Text("Today, +\(hoursDifference)HRS")
-                Text(country)
-                    .font(.system(.largeTitle, design: .default, weight: .thin))
-            }
-            Spacer()
-            
-            //Right Side
-            Text(time)
-                .font(.system(size: 64.0, weight: .thin, design: .default))
-            Text(AMorPM)
-                .font(.system(.largeTitle, design: .default, weight: .thin))
-            
-        }
-    }
-}
+

@@ -14,6 +14,7 @@
 		E9A755122D0389B000E7BCE4 /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A755112D0389B000E7BCE4 /* WorldClockView.swift */; };
 		E9A755142D0389C200E7BCE4 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A755132D0389C200E7BCE4 /* AlarmsView.swift */; };
 		E9A755162D0389FB00E7BCE4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A755152D0389FB00E7BCE4 /* StopwatchView.swift */; };
+		E9A755182D04994B00E7BCE4 /* CountryTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A755172D04994B00E7BCE4 /* CountryTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E9A755112D0389B000E7BCE4 /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
 		E9A755132D0389C200E7BCE4 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
 		E9A755152D0389FB00E7BCE4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		E9A755172D04994B00E7BCE4 /* CountryTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,9 @@
 		E9A755102D0388D300E7BCE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E9A755112D0389B000E7BCE4 /* WorldClockView.swift */,
 				E9A7550A2D0388B600E7BCE4 /* LandingView.swift */,
+				E9A755112D0389B000E7BCE4 /* WorldClockView.swift */,
+				E9A755172D04994B00E7BCE4 /* CountryTime.swift */,
 				E9A755132D0389C200E7BCE4 /* AlarmsView.swift */,
 				E9A755152D0389FB00E7BCE4 /* StopwatchView.swift */,
 			);
@@ -160,6 +163,7 @@
 				E9A7550E2D0388B600E7BCE4 /* ClockApp.swift in Sources */,
 				E9A755122D0389B000E7BCE4 /* WorldClockView.swift in Sources */,
 				E9A755142D0389C200E7BCE4 /* AlarmsView.swift in Sources */,
+				E9A755182D04994B00E7BCE4 /* CountryTime.swift in Sources */,
 				E9A755162D0389FB00E7BCE4 /* StopwatchView.swift in Sources */,
 				E9A7550F2D0388B600E7BCE4 /* LandingView.swift in Sources */,
 			);
