@@ -27,19 +27,7 @@ struct AlarmsView: View {
                     
                 }
                 Spacer()
-                HStack{
-                    Text("9:25")
-                        .font(.system(size: 64.0, weight: .thin, design: .default))
-                    Text ("AM")
-                        .font(.system(.largeTitle, design: .default, weight: .thin))
-                    Spacer()
-                    Toggle("", isOn: Binding.constant(true))
-                   
-
-                }
-                Text("Alarm")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.top, -50)
+                ExtractedView(time: "9:25", amOrPm: "AM", togglebutton: true)
                 Spacer()
                 
                 
@@ -78,4 +66,25 @@ struct AlarmsView: View {
 
 #Preview {
     LandingView()
+}
+
+struct ExtractedView: View {
+    //MARK: Stored Properties
+    let time: String
+    let amOrPm: String
+    let togglebutton: Bool
+    
+    var body: some View {
+        HStack{
+            Text(time)
+                .font(.system(size: 64.0, weight: .thin, design: .default))
+            Text(amOrPm)
+                .font(.system(.largeTitle, design: .default, weight: .thin))
+            Spacer()
+            Toggle("", isOn: Binding(get: { togglebutton }, set: { newValue in}))
+        }
+        Text("Alarm")
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.top, -50)
+    }
 }
