@@ -37,6 +37,9 @@ struct AlarmsView: View {
                    
 
                 }
+                Text("Alarm")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.top, -50)
                 Spacer()
                 
                 
